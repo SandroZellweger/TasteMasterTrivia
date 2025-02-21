@@ -50,12 +50,35 @@ button.correct {
 button.wrong {
     background-color: #dc3545;
 }
+button.selected {
+    background-color: #FFA500; /* Arancione per selezione multipla */
+}
 input {
     padding: 12px;
     margin: 5px;
     font-size: 16px;
     border-radius: 5px;
     border: 1px solid #ccc;
+}
+#matching-game {
+    margin: 20px 0;
+}
+#wine-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.wine-item {
+    padding: 10px;
+    margin: 5px;
+    background-color: #f0f0f0;
+    border: 2px dashed #ccc;
+    cursor: pointer;
+    user-select: none;
+}
+.wine-item.selected {
+    background-color: #FFA500;
+    border: 2px solid #FF8C00;
 }
 @keyframes pulse {
     0% { transform: scale(1); }
