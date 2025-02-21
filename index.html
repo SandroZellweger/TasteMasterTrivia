@@ -10,8 +10,14 @@
     <div id="game-container">
         <h1>Trivia del Gusto</h1>
         <div id="score">Punteggio: <span id="score-value">0</span></div>
-        <div id="question"></div>
+        <div id="progress">Domanda <span id="current-question">1</span> di 50</div>
+        <div id="question-container">
+            <img id="question-image" src="" alt="" style="display:none; max-width: 200px;">
+            <div id="question"></div>
+        </div>
         <div id="options"></div>
+        <div id="feedback" style="font-size: 20px; margin: 10px;"></div>
+        <button id="back-btn" style="background-color: #2196F3;">Torna Indietro</button>
         <button id="next-btn" style="display:none;">Prossima Domanda</button>
     </div>
     <script src="script.js"></script>
